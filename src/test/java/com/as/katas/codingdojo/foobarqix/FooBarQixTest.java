@@ -48,5 +48,12 @@ public class FooBarQixTest {
 	public void should_return_FooBarQix_when_is_divisibale_by_3and5and7() {
 		assertEquals("Sould be equal to FooBarQix", "FooBarQix", fooBarQix.process(210));
 	}
+	
+	@Test
+	public void should_return_value_when_not_divisible_3and5and7() {
+		assertEquals("Sould be equal to 2", "2", fooBarQix.process(2));
+		assertEquals("Sould be equal to 4", "4", fooBarQix.process(4));
+		assertEquals("Sould be equal to 11", "11", fooBarQix.process(11));
+	}
 
 }

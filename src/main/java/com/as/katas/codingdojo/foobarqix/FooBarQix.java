@@ -13,10 +13,11 @@ public class FooBarQix {
 			new SimpleEntry<Integer, String>(7, "Qix")).collect(
 					Collectors.toMap(e -> e.getKey(), (e) -> e.getValue()));
 
-	public Object process(int i) {
+	public Object process(Integer number) {
 		
-		return patterns.entrySet().stream().map(e-> i%e.getKey()==0? e.getValue():"").
+		String resultat = patterns.entrySet().stream().map(e-> number%e.getKey()==0? e.getValue():"").
 		collect(Collectors.joining());
+		return !"".equals(resultat)?resultat: number.toString();
 	}
 	
 
