@@ -71,4 +71,19 @@ public class FooBarQixTest {
 		assertEquals("Sould be equal to Qix", "Qix", fooBarQix.process(71));
 	}
 
+	@Test
+	public void should_return_FooFoo_when_contains_and_divisor_3() {
+		assertEquals("Sould be equal to FooFoo", "FooFoo", fooBarQix.process(3));
+	}
+
+	@Test
+	public void should_return_FooBarBar_WhenDivisor3_5and_contain_5() {
+		assertEquals("Sould be equal to FooBarBar", "FooBarBar", fooBarQix.process(15));
+	}
+
+	@Test
+	public void should_return_QixQix_when_is_contain_and_divisor_7() {
+		assertEquals("Sould be equal to QixQix", "QixQix", fooBarQix.process(7));
+	}
+
 }
